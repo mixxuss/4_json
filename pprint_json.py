@@ -1,4 +1,5 @@
 import json
+import sys
 
 def load_data(filepath):
     parsed_json = json.loads(filepath, encoding='utf-8')
@@ -11,5 +12,5 @@ def pretty_print_json(data):
 
 
 if __name__ == '__main__':
-    parsed_json = load_data(filepath)
+    parsed_json = load_data(sys.argv)
     pretty_print_json(parsed_json)
