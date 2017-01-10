@@ -8,7 +8,7 @@ def create_parser():
 
 
 def load_data(filepath):
-    parsed_json = json.loads(filepath, encoding='utf-8')
+    parsed_json = json.loads(open(filepath).read(), encoding='utf-8')
     return parsed_json
 
 
