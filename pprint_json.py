@@ -22,4 +22,5 @@ if __name__ == '__main__':
     filepath = parsed_args.parse_args()
     print(filepath.filepath)
     parsed_json = load_data(filepath.filepath)
-    pretty_print_json(parsed_json)
+    result = pretty_print_json(parsed_json)
+    print(result)
